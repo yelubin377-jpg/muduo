@@ -65,7 +65,7 @@ cd muduo
 ~/muduo/build/release-cpp11/bin/simple_echo
 
 # 终端2：连接测试
-nc localhost 2000
+nc localhost xxxx (具体端口查看具体代码)
 # 输入任意文字，服务器回显相同内容
 ```
 
