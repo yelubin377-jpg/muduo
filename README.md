@@ -59,7 +59,7 @@ cd muduo
 | `hub` | 发布/订阅中心 | 群组消息分发 |
 
 ### 快速测试
-
+eg:
 ```bash
 # 终端1：启动 echo 服务
 ~/muduo/build/release-cpp11/bin/simple_echo
