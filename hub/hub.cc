@@ -36,8 +36,8 @@ void HubServer::onMessage(const muduo::net::TcpConnectionPtr& conn,
 {
     muduo::string msg(buf->retrieveAllAsString());
     LOG_INFO <<  "HubServer(onMessage) - " << conn->peerAddress().toIpPort()
-             << " -> " << conn->localAddress().toIpPort()
-             << " bytes received at " << time.toString();
+             << " -> " << conn->localAddress().toIpPort() << msg.size()
+             << " bytes received at " << time.toFormattedString();
     for(auto& c:_store) 
     {
         c->send(msg);
