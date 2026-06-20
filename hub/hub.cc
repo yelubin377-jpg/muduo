@@ -2,8 +2,8 @@
 #include "muduo/net/EventLoop.h"
 #include "muduo/net/TcpServer.h"
 #include "muduo/base/Logging.h"
-#include <boost/bind.hpp>
-
+#include <boost/bind/bind.hpp>
+using namespace boost::placeholders;
 HubServer::HubServer(muduo::net::EventLoop* loop,
               const muduo::net::InetAddress& listenAddress)
             :_loop(loop),
